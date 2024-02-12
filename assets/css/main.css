@@ -1,0 +1,191 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--fourth);
+}
+:root {
+    --main: #2BD1D1;
+    --second: #3A3053;
+    --third: #34313C;
+    --fourth:#F0F1F6;
+}
+
+.navbar-brand {
+    color: var(--third);
+}
+
+.btn-one {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-two {
+    background-color: var(--main);
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    padding: 8px 16px;
+    transition: 0.3s ease-in;
+    & a{
+        color: white;
+    }
+}
+.btn-two:hover{
+    background-color: #9BE3E2;
+}
+
+.section1{
+    background-color: var(--fourth);
+    position: relative;
+    & .url{
+        background-color: var(--second);
+        background-image: url(../vendors/images/bg-shorten-desktop.svg);
+        height: 100px;
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        border-radius: 25px;
+        & input{
+            width: 700px;
+            height: 50px;
+            padding: 20px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+        }
+    }
+    & .title h3{
+        color: var(--third);
+    }
+    & .carde{
+        background-color: white;
+        padding: 15px;
+        border-radius: 25px;
+        & h4{
+            color: var(--third);
+        }
+    }
+    & .carde-af{
+        position: relative;
+    }
+    & img{
+        margin-top: -55px;
+        background-color: var(--second);
+        padding: 20px;
+        border-radius: 50%;
+    }
+}
+.carde-af::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 10px;
+    background-color: var(--main);
+    top: 55px;
+    right: -24px;
+    
+}
+.section2{
+    background-color: var(--second);
+    background-image: url(../vendors/images/bg-shorten-desktop.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+footer{
+    background-color: var(--third);
+    user-select: none;
+}
+footer .col p:hover{
+    color: var(--main);
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+@media(max-width:992px){
+    .section1{
+        background-color: var(--fourth);
+        position: relative;
+        & .url{
+            
+            height: 120px;
+            & input{
+                width: 500px;
+                height: 50px;
+                padding: 20px;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+                }
+                }
+                .carde-af::before{
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 51px;
+                    background-color: var(--main);
+                    top: 209px;
+                    right: 200px;
+                    
+                }
+                        }
+@media(max-width:576px){
+    .section1{
+        background-color: var(--fourth);
+        position: relative;
+        & .url{
+            
+            height: 120px;
+            & input{
+                width: 200px;
+                height: 50px;
+                padding: 20px;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+                }
+                }
+                .carde-af::before{
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 51px;
+                    background-color: var(--main);
+                    top: 230px;
+                    right: 165px;
+                    
+                }
+                        }
